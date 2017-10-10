@@ -1,0 +1,117 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.container-flex {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-derection: row;
+  justify-content: space-between;
+  height: 60vh;
+}
+
+li {
+  padding: 5px 5px 5px 30px ;
+}
+
+.container-flex>div {
+  display: flex;
+  flex-direction: column;
+  width:30vw;
+}
+
+div>ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+ul>li {
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  height:30px;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+input:disabled {
+  background-color: #ca7;
+  color: white;
+}
+
+input:required:invalid {
+  border-color: red;
+}
+
+input[id|="focus"]:focus {
+  background-color: green;
+}
+
+input[id|="invalid"]:invalid {
+  background-color: yellow;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+.container-flex>div:nth-child(1)>ul>li:nth-child(1) {
+  padding-left: 3px;
+}
+
+.container-flex>div:nth-child(1)>ul>li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.container-flex>div:nth-child(1)>ul>li:nth-child(n+2)::before {
+  content:"*";
+}
+
+.container-flex>div:nth-child(2)>ul>li:nth-child(2n+3) {
+  background-color: #fa4;
+}
+
+.container-flex>div:nth-child(2)>ul>li:nth-child(1) {
+  color: red;
+  font-size: 1.6em;
+}
+
+.container-flex>div:nth-child(2)>ul>li:nth-child(1)::before {
+  content: url(img/icons8-OK-16.png);
+}
+
+.container-flex>div:nth-child(3)>fieldset:nth-child(4) {
+  display: block;
+}
+
+table {
+  width: 90vw;
+  display:flex;
+  height:40vh;
+  justify-content:space-around;
+}
+
+tr {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+td {
+  padding: 1% 3vw 1% 3vw;
+}
+
+
+table tr:nth-child(odd) td:nth-child(odd) {
+  background-color: red;
+}
+
+table tr:nth-child(even) td:nth-child(even) {
+  background-color: red;
+}
